@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+
+        /////////////추가된 곳///////////////
+        maven {
+            url('https://naver.jfrog.io/artifactory/maven/')
+        }
+        //////////////////////////////////
+    }
+}
+rootProject.name = "testPrj"
+include ':app'
